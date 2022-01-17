@@ -1,0 +1,12 @@
+.signUp{
+    background-color: rgb(56, 143, 213);
+    width: 100px;
+    height: 50px;
+    border-width: 0px;
+    border-radius: 15%;
+    color: white;
+}
+
+.signUp:hover{
+    background-color: rgb(20, 47, 81);
+}
