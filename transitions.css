@@ -10,3 +10,8 @@
 .signUp:hover{
     background-color: rgb(20, 47, 81);
 }
+
+.cat-ctr {
+    border-radius: 15%;
+    border: 1px solid grey;
+}
