@@ -1,4 +1,4 @@
-.signUp{
+/* .signUp{
     background-color: rgb(56, 143, 213);
     width: 100px;
     height: 50px;
@@ -14,7 +14,7 @@
 .cat-ctr {
     width: 614px;
     height: 410px;
-    /*background-image: url(https://media.istockphoto.com/photos/cute-red-kitten-is-sleeping-on-his-back-and-smiling-paws-up-concept-picture-id1144982182?k=20&m=1144982182&s=612x612&w=0&h=VBL-PDRr9FddwkY4c7yBIkozv6669r-xNl-QJRRb1iw=)*/
+    background-image: url(https://media.istockphoto.com/photos/cute-red-kitten-is-sleeping-on-his-back-and-smiling-paws-up-concept-picture-id1144982182?k=20&m=1144982182&s=612x612&w=0&h=VBL-PDRr9FddwkY4c7yBIkozv6669r-xNl-QJRRb1iw=);
 }
 
 .cat-img{
@@ -46,32 +46,43 @@
     top:258px;
     margin: 0px;
     height:100px;
+} */
+
+.gif {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.gif{
-    position:absolute;
-}
-
-.moveUp:hover{
-    opacity: 0%;
-    transition: opacity 5s;
-}
-
-.opaqueBg{
-    background-color: black;
-    opacity: 100%;
-}
-
-.box {
+.container {
     position: relative;
-    width: 1400;
-    height: 336px;
-    background-color: red;
-    transition: background-color 2s;
-  }
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
   
-  .box:hover {
-    background-color: black;
-    opacity: 50%;
-    cursor: pointer;
-  }
+.container:hover .overlay {
+    height: 100%;
+}
+
+.popUpText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
